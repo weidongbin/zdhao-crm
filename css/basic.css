@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*css reset*/
+/*html{overflow-y:scroll;}*/
+body{margin:0;padding:0;font-size:12px;font-family:"微软雅黑",arial,sans-serif;color:#000;}
+div,p,dl,dt,dd,ul,ol,li,tr,th,td,form,input,button,textarea,select,hr{margin:0;padding:0;font-size:12px;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:100%;font-weight:normal;}
+fieldset,img,button,input,textarea,select{border:0;outline:none;}
+address,caption,cite,code,dfn,em,strong,th,var,i,b,label{font-style:normal;font-weight:normal;}
+caption,th{text-align:left;}
+ul,li,dl,ol{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+img{vertical-align:middle;}
+a{text-decoration:none;color:#000;}
+a:hover{color:#ff9900;text-decoration:none;}
+
+/*PUBLIC CSS*/
+:focus{outline:none;}  /*焦点样式*/
+.clearfix{*zoom:1;}    /*只针对IE6/7 */
+.clearfix:after{display:block;overflow:hidden;visibility:hidden;clear:both;height:0;content:".";}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.v-hide{visibility:hidden;}
+.d-block{display:block;}
+.d-inblock{display:inline-block;}
+
+/*手机端备用*/
+/*.tab{display:-webkit-box;display:box;}
+.tab a{-webkit-box-flex:1;box-flex:1;}*/

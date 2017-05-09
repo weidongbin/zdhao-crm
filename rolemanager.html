@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>角色管理-找大号后台管理系统</title>
+	<meta name="description" content="找大号-社会化媒体资源平-台后台管理系统">
+	<meta name="keyword" content="找大号-社会化媒体资源平台后-台管理系统">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="plugin/pikadayMaster/css/pikaday.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="plugin/pikadayMaster/js/pikaday.min.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="headerBox">
+		<div class="hederTop">
+			<ul class="topInfo fl clearfix">
+				<li><a href="/">首页</a></li>
+				<li><a href="regsucceed.html">广告主注册成功</a></li>
+				<li><a href="beassigned.html">广告主待分配</a></li>
+				<li><a href="regfailed.html">广告主注册不通过</a></li>
+				<li><a href="rolemanager.html">角色管理</a></li>
+			</ul>
+			<ul class="topIcon fr clearfix">
+				<li><a href="javascript:;" class="icon date"></a></li>
+				<li>
+					<a href="javascript:;" class="icon set"></a>
+					<i class="icon trangle" style="display:none;"></i>
+					<dl class="setCon" style="display:none;">
+						<dd><a href="/"><i class="icon home"></i>平台首页</a></dd>
+						<dd><a href="javascript:;" id="modify-psd"><i class="icon password"></i>修改密码</a></dd>
+						<dd><a href="javascript:;"><i class="icon exit"></i>安全退出</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="headerBot">
+			<p>当前位置：<span>角色管理</span></p>
+		</div>
+	</div>
+    <!-- 内容区域 -->
+    <div class="wrapper">
+    	<!-- 搜索 -->
+    	<div class="searchBox">
+            <form action="" method="post" id="">
+            	<label class="keyword-box">
+	    			<span class="title">用户名<i class="icon"></i></span>
+	    			<span class="txt">
+	    				<input type="text" name="keyword" placeholder="请输入关键词···" class="keyword">
+	    			</span>
+	    			<span class="btn">
+	    				<a href="javascript:;" class="searchBtn"><i class="icon"></i></a>
+	    			</span>
+	    		</label>
+            </form>
+    	</div>
+    	<!-- 表格 -->
+    	<div class="tableBox">
+    		<div class="tableCon">
+    			<!-- 表头 -->
+    			<h3 class="tableTitle">
+    				<span id="addRoleBtn"><i class="icon role"></i>添加角色</span>
+    			</h3>
+    			<!-- 表体 -->
+    			<table class="tableBody">
+    				<thead>
+    					<tr>
+	    					<th width="30px">&nbsp;</th>
+	    					<th>用户ID</th>
+	    					<th>角色用户名</th>
+	    					<th>真实姓名</th>
+	    					<th>手机号</th>
+	    					<th>QQ号码</th>
+	    					<th>创建时间</th>
+	    					<th>登录时间</th>
+	    					<th>所属角色</th>
+	    					<th width="220px">操作</th>
+	    				</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+	    					<td>1</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>2</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>3</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>4</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>5</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>6</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>7</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+
+	    				<tr>
+	    					<td>8</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>9</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>10</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>11</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>12</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>13</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>14</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr>
+	    					<td>15</td>
+	    					<td>1213</td>
+	    					<td>德玛西亚</td>
+	    					<td>位栋彬</td>
+	    					<td>15755174845</td>
+	    					<td>1169402478</td>
+	    					<td>2016-02-10</td>
+	    					<td>2016-02-20</td>
+	    					<td>主管</td>
+	    					<td>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit">编辑</a>
+	    							<a href="javascript:;" class="delete">删除</a>
+	    							<a href="javascript:;" class="resetPsd">重置密码</a>
+	    							<a href="javascript:;" class="setPower">设置权限</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+    				</tbody>
+    			</table>
+    			<!-- 分页 -->
+    			<div class="pageBox">
+    				<span class="page">
+    					<a href="javascript:;" class="btn prev"><i class="icon"></i></a>
+    					<a href="javascript:;" class="cur">2</a>
+    					<a href="javascript:;" class="btn next"><i class="icon"></i></a>
+    					<a href="javascript:;" class="num">共<b>2</b>页</a>
+    					<a href="javascript:;" class="btn last">最后一页</a>
+    				</span>
+    				<span class="record">共<b>15</b>条记录</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!-- 遮罩 -->
+	    <div class="mask" style="display:none;"></div>
+    </div>
+    <!-- 弹框 -->
+    <div class="bombBox" style="display:none;"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+	    	// 设置
+	    	__setFun();
+	    	// 表格偶数行变色
+	    	__changeColor();
+            // 复选框函数
+	    	__checkedFun();
+
+            $('.operate a').click(function() {
+            	__domShow('bombBox','mask');
+            	var bombBox = $('.bombBox');
+            	if ($(this).is('.edit')) {
+            		var editCon =   '<h2 class="bomb-title"><i class="icon edit"></i>编辑<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+									'<form action="" method="post" id="edit">'+
+										'<table class="bomb-table">'+
+											'<tr>'+
+												'<td>用户名</td>'+
+												'<td><input type="text" name="userName" class="input-txt" placeholder="请输入用户名" data-msg="用户名"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>真实姓名</td>'+
+												'<td><input type="text" name="realName" class="input-txt" placeholder="请输入真实姓名" data-msg="真实姓名"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>密码</td>'+
+												'<td><input type="password" name="psd" class="input-txt" placeholder="请输入密码" data-msg="密码"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>确认密码</td>'+
+												'<td><input type="password" name="surePsd" class="input-txt" placeholder="再次输入密码" data-msg="确认密码"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>电话</td>'+
+												'<td><input type="text" name="phone" class="input-txt" placeholder="请输入电话" data-msg="电话"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>QQ</td>'+
+												'<td><input type="text" name="qq" class="input-txt" placeholder="请输入QQ" data-msg="QQ"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>所属角色</td>'+
+												'<td>'+
+													'<select name="role" class="select-choose">'+
+														'<option value="请选择">请选择</option>'+
+														'<option value="主管">主管</option>'+
+														'<option value="销售">销售</option>'+
+													'</select>'+
+												'</td>'+
+											'</tr>'+
+										'</table>'+
+										'<div class="bomb-btnBox">'+
+											'<a href="javascript:;" class="subBtn">提交</a>'+
+										'</div>'+
+									'</form>';
+					bombBox.append(editCon);
+            	}
+            	if ($(this).is('.delete')) {
+            		var deleteCon = '<h2 class="bomb-title"><i class="icon delete"></i>删除<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+									'<form action="" method="post" id="delete">'+
+										'<div class="bomb-msg">确定要删除此角色吗？</div>'+
+										'<div class="bomb-btnBox">'+
+											'<a href="javascript:;" class="subBtn bgc" onclick="__hideBomb(this);">取消</a>'+
+											'<a href="javascript:;" class="subBtn">确定</a>'+
+										'</div>'+
+									'</form>';
+					bombBox.append(deleteCon);
+            	}
+            	if ($(this).is('.resetPsd')) {
+            		__psdBomb('重置密码','resetPsd');
+            	}
+            	if ($(this).is('.setPower')) {
+            		var resetPsdCon =   '<h2 class="bomb-title"><i class="icon power"></i>设置权限<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+								    	'<form action="" method="post" id="setPower">'+
+								    		'<div class="clearfix">'+
+								    			'<table class="bomb-table fl" style="margin-left:70px;">'+
+									    			'<tr>'+
+									    				'<td>设置广告主编辑</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advEdit" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>设置广告主通过</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advPass" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>设置广告主分配</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advFenpei" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>查看广告主消费记录</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advXFJL" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>查看广告主跟进记录</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advGJJL" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>查看广告主充值记录</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advCZJL" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    		'</table>'+
+									    		'<table class="bomb-table fr" style="margin-right:70px;">'+
+									    			'<tr>'+
+									    				'<td>设置广告主删除</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advDelete" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>设置广告主不通过</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advNotpass" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>设置广告主等级</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="advRank" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>角色编辑</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="roleEdit" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>角色添加</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="roleAdd" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    			'<tr>'+
+									    				'<td>角色删除</td>'+
+									    				'<td>'+
+									    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+									    					'<input type="hidden" name="roleDelete" value="off">'+
+									    				'</td>'+
+									    			'</tr>'+
+									    		'</table>'+
+								    		'</div>'+
+								    		'<div class="bomb-btnBox">'+
+											    '<a href="javascript:;" class="subBtn">提交</a>'+
+										    '</div>'+
+								    	'</form>';
+            		bombBox.append(resetPsdCon); 
+            		__switchFun('switchs');
+            	}
+            });
+            
+            // 添加角色
+            $('#addRoleBtn').click(function() {
+                __domShow('bombBox','mask');
+            	var bombBox = $('.bombBox');
+            	var addRoleCon = '<h2 class="bomb-title"><i class="icon role"></i>添加角色<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+						    	'<form action="" method="post" id="addRole">'+
+						    		'<table class="bomb-table">'+
+						    			'<tr>'+
+											'<td>用户名</td>'+
+											'<td><input type="text" name="userName" class="input-txt" placeholder="请输入用户名" data-msg="用户名"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>真实姓名</td>'+
+											'<td><input type="text" name="realName" class="input-txt" placeholder="请输入真实姓名" data-msg="真实姓名"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>密码</td>'+
+											'<td><input type="password" name="psd" class="input-txt" placeholder="请输入密码" data-msg="密码"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>确认密码</td>'+
+											'<td><input type="password" name="surePsd" class="input-txt" placeholder="再次输入密码" data-msg="确认密码"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>电话</td>'+
+											'<td><input type="text" name="phone" class="input-txt" placeholder="请输入电话" data-msg="电话"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>QQ</td>'+
+											'<td><input type="text" name="qq" class="input-txt" placeholder="请输入QQ" data-msg="QQ"></td>'+
+										'</tr>'+
+										'<tr>'+
+											'<td>所属角色</td>'+
+											'<td>'+
+												'<select name="role" class="select-choose">'+
+													'<option value="请选择">请选择</option>'+
+													'<option value="主管">主管</option>'+
+													'<option value="销售">销售</option>'+
+												'</select>'+
+											'</td>'+
+										'</tr>'+
+						    		'</table>'+
+						    		'<div class="clearfix">'+
+						    			'<table class="bomb-table fl" style="margin-left:70px;">'+
+						    				'<tr>'+
+							    				'<td>设置广告主编辑</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advEdit" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>设置广告主通过</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advPass" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>设置广告主分配</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advFenpei" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>查看广告主消费记录</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advXFJL" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>查看广告主跟进记录</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advGJJL" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>查看广告主充值记录</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advCZJL" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>角色权限设置</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="setRolePower" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+						    			'</table>'+
+						    			'<table class="bomb-table fr" style="margin-right:70px;">'+
+						    				'<tr>'+
+							    				'<td>设置广告主删除</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advDelete" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>设置广告主不通过</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advNotpass" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>设置广告主等级</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="advRank" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>角色编辑</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="roleEdit" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>角色添加</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="roleAdd" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+							    			'<tr>'+
+							    				'<td>角色删除</td>'+
+							    				'<td>'+
+							    					'<a href="javascript:;" class="switchs off"><i class="switch"></i></a>'+
+							    					'<input type="hidden" name="roleDelete" value="off">'+
+							    				'</td>'+
+							    			'</tr>'+
+						    			'</table>'+
+						    		'</div>'+
+						    		'<div class="bomb-btnBox">'+
+										'<a href="javascript:;" class="subBtn">提交</a>'+
+									'</div>'+
+						    	'</form>';
+                bombBox.append(addRoleCon); 
+            	__switchFun('switchs');
+            });
+	    })
+	</script>
+</body>
+</html>

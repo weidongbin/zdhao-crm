@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+ * @author WeiDongbin
+ * @date Feb,14 2017
+ * @addredss hefei
+ */
+
+body{background-color:#f3f3f3;}
+/*内容*/
+.conBox{text-align:center;position:relative;}
+.conBox ul{display:inline-block;width:800px;padding:40px 0 40px 45px;}
+.conBox li{float:left;margin:13px 15px;}
+.conBox .itemCon{position:relative;top:0;width:342px;height:auto;-webkit-box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);-moz-box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);-ms-box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);-o-box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);}
+.conBox .itemCon:hover{top:-5px;}
+.conBox .itemInfo{position:relative;width:100%;height:244px;background-color:#f8f8f8;}
+.conBox .itemInfo img{display:inline-block;margin-top:50px;-webkit-transform-origin:50% 50% 0;-moz-transform-origin:50% 50% 0;-ms-transform-origin:50% 50% 0;-o-transform-origin:50% 50% 0;transform-origin:50% 50% 0;-webkit-transition:transform 0.4s ease-in-out 0s;-moz-transition:transform 0.4s ease-in-out 0s;-ms-transition:transform 0.4s ease-in-out 0s;-o-transition:transform 0.4s ease-in-out 0s;transition:transform 0.4s ease-in-out 0s;}
+.conBox .itemInfo:hover img{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}
+.conBox .itemInfo p{position:absolute;bottom:25%;width:100%;color:#333;font-size:20px;*left:0;}
+.conBox .itemBtn{width:100%;height:77px;line-height:77px;background-color:#fff;}
+.conBox .itemBtn a{color:#18a9ec;border:1px solid #18a9ec;padding:7px 25px;border-radius:30px;}
+.conBox .itemBtn a:hover{color:#3acbeb;border:1px solid #3acbeb;}

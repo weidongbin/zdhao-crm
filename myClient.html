@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的客户-找大号后台管理系统</title>
+	<meta name="description" content="找大号-社会化媒体资源平-台后台管理系统">
+	<meta name="keyword" content="找大号-社会化媒体资源平台后-台管理系统">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="plugin/pikadayMaster/css/pikaday.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="plugin/pikadayMaster/js/pikaday.min.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="headerBox">
+		<div class="hederTop">
+			<ul class="topInfo fl clearfix">
+				<li><a href="/">首页</a></li>
+				<li><a href="regsucceed.html">广告主注册成功</a></li>
+				<li><a href="beassigned.html">广告主待分配</a></li>
+				<li><a href="regfailed.html">广告主注册不通过</a></li>
+				<li><a href="myClient.html">我的客户</a></li>
+			</ul>
+			<ul class="topIcon fr clearfix">
+				<li><a href="javascript:;" class="icon date"></a></li>
+				<li>
+					<a href="javascript:;" class="icon set"></a>
+					<i class="icon trangle" style="display:none;"></i>
+					<dl class="setCon" style="display:none;">
+						<dd><a href="/"><i class="icon home"></i>平台首页</a></dd>
+						<dd><a href="javascript:;" id="modify-psd"><i class="icon password"></i>修改密码</a></dd>
+						<dd><a href="javascript:;"><i class="icon exit"></i>安全退出</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="headerBot">
+			<p>当前位置：<span>我的客户</span></p>
+		</div>
+	</div>
+    <!-- 内容区域 -->
+    <div class="wrapper">
+    	<!-- 搜索 -->
+    	<div class="searchBox">
+            <form action="" method="post" id="">
+            	<label class="keyword-box">
+	    			<span class="title">公司名称<i class="icon"></i></span>
+	    			<span class="txt">
+	    				<input type="text" name="keyword" placeholder="请输入关键词···" class="keyword">
+	    			</span>
+	    			<span class="btn">
+	    				<a href="javascript:;" class="searchBtn"><i class="icon"></i></a>
+	    			</span>
+	    		</label>
+	    		<label class="date-box">
+	    			<span class="stime">
+	    				<input type="text" name="startTime" placeholder="注册开始时间" class="querytime" id="startTime">
+	    			</span>
+	    			<span class="line">—</span>
+	    			<span class="etime">
+	    				<input type="text" name="endTime" placeholder="注册结束时间" class="querytime" id="endTime">
+	    			</span>
+	    		</label>
+	    		<label class="btn-box">
+	    			<span class="btn">
+	    				<a href="javascript:;" class="queryBtn"><i class="icon"></i>查询</a>
+	    			</span>
+	    		</label>
+            </form>
+    	</div>
+    	<!-- 表格 -->
+    	<div class="tableBox">
+    		<div class="tableCon">
+    			<!-- 表头 -->
+    			<h3 class="tableTitle">
+    				<span id="setRankBtn"><i class="icon rank"></i>设置等级</span>
+    			</h3>
+    			<!-- 表体 -->
+    			<table class="tableBody">
+    				<thead>
+    					<tr>
+	    					<th><input type="checkbox" name="checkAll"></th>
+	    					<th>用户ID</th>
+	    					<th>用户名</th>
+	    					<th>等级</th>
+	    					<th>公司名称</th>
+	    					<th>联系人</th>
+	    					<th>手机</th>
+	    					<th>QQ号码</th>
+	    					<th>冻结资金</th>
+	    					<th>账号资金</th>
+	    					<th>总消费资金</th>
+	    					<th>所属销售</th>
+	    					<th>操作</th>
+	    				</tr>
+    				</thead>
+    				<tbody>
+    					<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+	    				<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+    					<tr class="lh25">
+	    					<td><input type="checkbox" name="checkItem"></td>
+	    					<td>20170228</td>
+	    					<td><font color="#6699ff">法海不懂爱</font></td>
+	    					<td>3</td>
+	    					<td>连梦科技</td>
+	    					<td>位栋彬</td>
+	    					<td>13855174528</td>
+	    					<td>1369402478</td>
+	    					<td>123.00</td>
+	    					<td>456.00</td>
+	    					<td>789.00</td>
+	    					<td>暂无</td>
+	    					<td style="width:140px;padding:5px 0;">
+	    						<span class="operate">
+	    							<a href="javascript:;" class="edit alone">编辑</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="CZJL">充值记录</a>
+	    							<a href="javascript:;" class="XFJL">消费记录</a>
+	    						</span>
+	    						<span class="operate">
+	    							<a href="javascript:;" class="GJJL">跟进记录</a>
+	    							<a href="javascript:;" class="setRank">设置等级</a>
+	    						</span>
+	    					</td>
+	    				</tr>
+    				</tbody>
+    			</table>
+    			<!-- 分页 -->
+    			<div class="pageBox">
+    				<span class="page">
+    					<a href="javascript:;" class="btn prev"><i class="icon"></i></a>
+    					<a href="javascript:;" class="cur">3</a>
+    					<a href="javascript:;" class="btn next"><i class="icon"></i></a>
+    					<a href="javascript:;" class="num">共<b>168</b>页</a>
+    					<a href="javascript:;" class="btn last">最后一页</a>
+    				</span>
+    				<span class="record">共<b>456789</b>条记录</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!-- 遮罩 -->
+	    <div class="mask" style="display:none;"></div>
+    </div>
+    <!-- 弹框 -->
+    <div class="bombBox" style="display:none;"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+	    	// 时间拾取器
+            __PickerDate('startTime');
+			__PickerDate('endTime');
+	    	// 设置
+	    	__setFun();
+	    	// 表格偶数行变色
+	    	__changeColor();
+            // 复选框函数
+	    	__checkedFun();
+
+            $('.operate a').click(function() {
+            	__domShow('bombBox','mask');
+            	var bombBox = $('.bombBox');
+            	if ($(this).is('.edit')) {
+            		var editCon =   '<h2 class="bomb-title"><i class="icon edit"></i>编辑<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+									'<form action="" method="post" id="edit">'+
+										'<table class="bomb-table">'+
+											'<tr>'+
+												'<td>系统ID</td>'+
+												'<td><input type="text" name="sysID" class="input-txt" placeholder="请输入系统ID" data-msg="系统ID"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>公司名称</td>'+
+												'<td><input type="text" name="compName" class="input-txt" placeholder="请输入公司名称" data-msg="公司名称"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>所属销售</td>'+
+												'<td>'+
+													'<select name="sale" class="select-choose">'+
+														'<option value="请选择">请选择</option>'+
+														'<option value="111">111</option>'+
+														'<option value="222">222</option>'+
+														'<option value="333">333</option>'+
+													'</select>'+
+												'</td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>所属行业</td>'+
+												'<td>'+
+													'<select name="industry" class="select-choose">'+
+														'<option value="请选择">请选择</option>'+
+														'<option value="111">111</option>'+
+														'<option value="222">222</option>'+
+														'<option value="333">333</option>'+
+													'</select>'+
+												'</td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>联系人姓名</td>'+
+												'<td><input type="text" name="contName" class="input-txt" placeholder="请输入联系人姓名" data-msg="联系人姓名"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>联系人电话</td>'+
+												'<td><input type="text" name="contPhone" class="input-txt" placeholder="请输入联系人电话" data-msg="联系人电话"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>广告主Email</td>'+
+												'<td><input type="text" name="advEmail" class="input-txt" placeholder="请输入广告主email" data-msg="广告主email"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>广告主手机</td>'+
+												'<td><input type="text" name="advPhone" class="input-txt" placeholder="请输入广告主手机" data-msg="广告主手机"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>广告主QQ号</td>'+
+												'<td><input type="text" name="advPhone" class="input-txt" placeholder="请输入广告主QQ号" data-msg="广告主QQ号"></td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>广告主来源</td>'+
+												'<td>'+
+													'<select name="advSource" class="select-choose">'+
+														'<option value="暂无">暂无</option>'+
+														'<option value="微信">微信</option>'+
+														'<option value="微博">微博</option>'+
+														'<option value="新浪">新浪</option>'+
+													'</select>'+
+												'</td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>所在地</td>'+
+												'<td>'+
+													'<select name="location" class="select-choose">'+
+														'<option value="暂无">暂无</option>'+
+														'<option value="安徽">安徽</option>'+
+														'<option value="湖南">湖南</option>'+
+														'<option value="河北">河北</option>'+
+													'</select>'+
+												'</td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>备注</td>'+
+												'<td>'+
+													'<textarea name="remark" placeholder="请输入备注" class="textarea-txt"></textarea>'+
+												'</td>'+
+											'</tr>'+
+										'</table>'+
+										'<div class="bomb-btnBox">'+
+											'<a href="javascript:;" class="subBtn">提交</a>'+
+										'</div>'+
+									'</form>';
+					bombBox.append(editCon);
+            	}
+            	if($(this).is('.CZJL')){
+            		var CZJLCon =   '<h2 class="bomb-title"><i class="icon recharge"></i>充值记录<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+							    	'<div style="poaition:relative;">'+
+										'<form action="" method="post" id="recharge">'+
+								    		'<div class="bomb-query">'+
+								    			'<span>起止时间</span>'+
+								    			'<span><input type="text" name="bomb-startTime" class="input-txt" id="CZJL-startTime"></span>'+
+								    			'<span>—</span>'+
+								    			'<span><input type="text" name="bomb-endTime" class="input-txt" id="CZJL-endTime"></span>'+
+								    			'<span><a href="javascript:;" class="btn last">查 询</a></span>'+
+								    			'<span class="recharge"><a href="javascript:;" class="rechargeBtn">充 值</a></span>'+
+								    		'</div>'+
+								    	'</form>'+
+										'<table class="bomb-tableshow">'+
+											'<thead>'+
+												'<tr>'+
+													'<th>打款时间</th>'+
+													'<th>打款金额</th>'+
+													'<th>打款到账号</th>'+
+												'</tr>'+
+											'</thead>'+
+											'<tbody>'+
+												'<tr>'+
+													'<td>2017-02-27</td>'+
+													'<td><font color="#ff0000">&yen;<b>789.000</b></font></td>'+
+													'<td>weiDongbin0707</td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td>2017-02-28</td>'+
+													'<td><font color="#ff0000">&yen;<b>789.000</b></font></td>'+
+													'<td>weiDongbin0707</td>'+
+												'</tr>'+
+											'</tbody>'+
+										'</table>'+
+										'<div class="bomb-mask" style="display:none;"></div>'+
+									'</div>'+
+									'<div class="secondAlert" style="display:none;"></div>';
+					bombBox.append(CZJLCon);
+					$('.rechargeBtn').click(function() {
+						var secondAlert = $('.secondAlert');
+						var bombMask    = $('.bomb-mask');
+						var rechargeCon =  '<h2 class="bomb-title"><i class="icon recharge"></i>充值<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+											'<form action="" method="post" id="recharge-form">'+
+												'<table class="bomb-table">'+
+													'<tr>'+
+														'<td>金额</td>'+
+														'<td><input type="text" name="rechargeSum" class="input-txt" placeholder="请输入金额, 可以输入负数, 负数意为减金额" data-msg="充值金额"></td>'+
+													'</tr>'+
+												'</table>'+
+												'<div class="bomb-btnBox"><a href="javascript:;" class="subBtn">提交</a></div>'+
+											'</form>';
+						secondAlert.append(rechargeCon).show();
+						bombMask.show();
+					});
+					// 时间拾取器
+                    __PickerDate('CZJL-startTime');
+	                __PickerDate('CZJL-endTime');
+            	}
+            	if ($(this).is('.XFJL')) {
+            		var XFJLCon =   '<h2 class="bomb-title"><i class="icon consume"></i>消费记录<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+							    	'<form action="" method="post" id="consume">'+
+										'<div class="bomb-query">'+
+											'<span>起止时间</span>'+
+											'<span>'+
+												'<input type="text" name="bomb-startTime" class="input-txt" id="XFJL-startTime">'+
+											'</span>'+
+											'<span>—</span>'+
+											'<span>'+
+												'<input type="text" name="bomb-endTime" class="input-txt" id="XFJL-endTime">'+
+											'</span>'+
+											'<span class="put putType">'+
+												'<a href="javascript:;" class="btn btn-js"><b>投放类型</b><i class="icon type"></i></a>'+
+												'<ul class="hide putCon"><li>销售</li><li>主管</li><li>销售</li></ul>'+
+											'</span>'+
+											'<span class="put putPlatform">'+
+												'<a href="javascript:;" class="btn btn-js"><b>投放平台</b><i class="icon platform"></i></a>'+
+												'<ul class="hide putCon"><li>美拍</li><li>微信</li><li>一直播</li></ul>'+
+											'</span>'+
+											'<span><a href="javascript:;" class="btn last">查 询</a></span>'+
+										'</div>'+
+									'</form>'+
+									'<table class="bomb-tableshow">'+
+										'<thead>'+
+											'<tr>'+
+												'<th>消费时间</th>'+
+												'<th>消费金额</th>'+
+												'<th>消费平台</th>'+
+												'<th>消费账号</th>'+
+											'</tr>'+
+										'</thead>'+
+										'<tbody>'+
+											'<tr>'+
+												'<td>2017.02.22</td>'+
+												'<td><font color="#ff0000">&yen;<b>612.000</b></font></td>'+
+												'<td>美拍</td>'+
+												'<td>weidngbin</td>'+
+											'</tr>'+
+											'<tr>'+
+												'<td>2017.02.22</td>'+
+												'<td><font color="#ff0000">&yen;<b>612.000</b></font></td>'+
+												'<td>秒拍</td>'+
+												'<td>weidngbin</td>'+
+											'</tr>'+
+										'</tbody>'+
+									'</table>';
+                    bombBox.append(XFJLCon);
+			        $('.btn-js').click(function() {
+			        	$(this).siblings('ul').removeClass('hide').parent().siblings('.put').find('ul').addClass('hide');
+			        });
+			        $('.putCon li').click(function() {
+			        	var thiss = $(this);
+			        	var liTxt = thiss.text();
+			        	thiss.parent().siblings('a').find('b').text(liTxt);
+			        	thiss.parent().addClass('hide')
+			        });
+			        // 时间拾取器
+                    __PickerDate('XFJL-startTime');
+			        __PickerDate('XFJL-endTime');
+            	}
+            	if ($(this).is('.GJJL')){
+            		var GJJLCon =   '<h2 class="bomb-title"><i class="icon follow"></i>跟进记录<span class="fr icon close" onclick="__hideBomb(this);"></span></h2>'+
+									'<form action="" method="post" id="follow">'+
+										'<table class="bomb-table">'+
+												'<tr>'+
+													'<td>用户名</td>'+
+													'<td><strong>法海不懂爱</strong></td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td>公司名称</td>'+
+													'<td><input type="text" name="compName" class="input-txt" placeholder="请输入公司名称" data-msg="公司名称"></td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td>联系人姓名</td>'+
+													'<td><input type="text" name="contName" class="input-txt" placeholder="请输入公司名称" data-msg="联系人姓名"></td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td>联系人电话</td>'+
+													'<td><input type="text" name="contPhone" class="input-txt" placeholder="请输入联系人电话" data-msg="联系人电话"></td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td>跟进记录</td>'+
+													'<td><textarea name="followNote" placeholder="请输入跟进记录信息，最多可输入200字" class="textarea-txt"></textarea></td>'+
+												'</tr>'+
+										'</table>'+
+										'<div class="bomb-btnBox"><a href="javascript:;" class="subBtn">提交</a></div>'+
+										'<div class="followDetails">'+
+											'<h3 class="detail-title">详细跟进记录列表</h3>'+
+											'<div class="detail-con">'+
+												'<table class="detail-table">'+
+													'<thead>'+
+														'<tr>'+
+															'<th width="200px">时间</th>'+
+															'<th>内容</th>'+
+														'</tr>'+
+													'</thead>'+
+													'<tbody>'+
+														'<tr>'+
+															'<td><input type="text" name="followTime"></td>'+
+															'<td><textarea name="followTxt"></textarea></td>'+
+														'</tr>'+
+														'<tr>'+
+															'<td><input type="text" name="followTime"></td>'+
+															'<td><textarea name="followTxt"></textarea></td>'+
+														'</tr>'+
+													'</tbody>'+
+												'</table>'+
+											'</div>'+
+										'</div>'+
+							    	'</form>';
+            		bombBox.append(GJJLCon);
+            	}
+            	if ($(this).is('.setRank')){
+            		__setRankBomb();
+            	}
+            });
+	    })   
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*
+ * @author WeiDongbin
+ * @date Feb,14 2017
+ * @addredss hefei
+ */
+
+body{background:url(../img/bg.png) repeat;}
+
+.loginBox{width:564px;height:auto;margin:120px auto 0;-webkit-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);-moz-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);-ms-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);-o-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);}
+.loginBox .loginLogo{width:386px;height:48px;background:url(../img/logo.png) no-repeat;}
+.loginBox .loginForm{width:100%;height:232px;background:url(../img/loginbg.png) no-repeat;margin-top:15px;}
+.loginBox .loginForm .login-form ul{padding:80px 0 0 130px;}
+.loginBox .loginForm .login-form li{line-height:42px;}
+.loginBox .loginForm .login-form label{vertical-align:middle;font-size:14px;padding-right:10px;word-spacing:10px;}
+.loginBox .loginForm .login-form input.input-txt,.loginBox .loginForm .login-form input.input-code{padding:0 5px;}
+.loginBox .loginForm .login-form input.input-txt,.loginBox .loginForm .login-form input.input-code,.loginBox .loginForm .login-form span.pic-code{vertical-align:middle;height:28px;line-height:28px;border:1px solid #d2d2d2;}
+.loginBox .loginForm .login-form input.input-txt{width:208px;}
+.loginBox .loginForm .login-form input.input-code{width:128px;}
+.loginBox .loginForm .login-form span.pic-code{display:inline-block;width:68px;margin-left:10px;background-color:#dcdcdc;cursor:pointer;}
+.loginBox .loginBtn{text-align:center;padding:15px 0;background-color:#ececec;border-top:2px solid #cdcac1;}
+.loginBox .loginBtn a{display:inline-block;width:86px;height:32px;line-height:32px;background-color:#ff9900;color:#fff;font-size:14px;word-spacing:-2px;border-radius:20px;}
+
+.copyright{color:#666;text-align:center;padding:20px 0;}
